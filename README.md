@@ -1,1 +1,1 @@
-# Selenium skills
+# Selenium WebDriver skills
