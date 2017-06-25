@@ -12,10 +12,12 @@ Auto test performs the following steps:
 
 Expected result: the calculator returns 5 into the result field
 
+
 - Demo2, PercentCalculatorPage
 
-Auto test performs the same steps as in Demo1, however using Page Object Model test design pattern
+Auto test performs the same steps as in Demo1, however plus using Page Object Model test design pattern
+
 
 - Demo3
 
-The same auto test as in Demo2, however using TestNG
+The same auto test as in Demo2, however plus using TestNG
