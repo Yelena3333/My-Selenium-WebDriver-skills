@@ -7,7 +7,7 @@ Auto test performs the following steps:
 2. Enter http://www.calculator.net/
 3. Click Percentage Calculator
 4. Enter 10 in the first field
-5. Enter 50 in the seconf field
+5. Enter 50 in the second field
 6. Click Calculate button
 
 Actual result: the calculator returns 5 (it is checked in the code)
