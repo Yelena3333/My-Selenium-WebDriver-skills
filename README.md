@@ -10,8 +10,8 @@ Auto test performs the following steps:
 5. Enter 50 in the second field
 6. Click Calculate button
 
-Actual result: the calculator returns 5 (it is checked in the code)
+Expected result: the calculator returns 5 into the result field
 
 - Demo2
 
-Auto test performs the same steps as at point 1, but using Page Object Model test design pattern
+Auto test performs the same steps as at point 1, however using Page Object Model test design pattern
