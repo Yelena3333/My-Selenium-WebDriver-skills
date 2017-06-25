@@ -1,6 +1,6 @@
 # Selenium WebDriver
 
-- Demo1 
+- 1) Demo1 
 
 Auto test performs the following steps:
 1. Open Firefox
@@ -12,10 +12,10 @@ Auto test performs the following steps:
 
 Expected result: the calculator returns 5 into the result field
 
-- Demo2, PercentCalculatorPage
+- 2) Demo2, PercentCalculatorPage
 
 Auto test performs the same steps as at point 1, however using Page Object Model test design pattern
 
-- Demo3
+- 3) Demo3
 
 The same auto test as at point 2, however using TestNG
