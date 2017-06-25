@@ -15,13 +15,13 @@ public class Demo2 {
 		// exception
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		// Launch website
+		// Launch web-site
 		driver.navigate().to("http://www.calculator.net/");
 
 		// Maximize the browser
 		driver.manage().window().maximize();
 
-		// Use elements from PercentCalculatorPage class
+		// Use element's path described once in PercentCalculatorPage class
 		PercentCalculatorPage.lnk_percent_calc(driver).click();
 
 		PercentCalculatorPage.txt_num_1(driver).clear();
@@ -32,12 +32,12 @@ public class Demo2 {
 
 		PercentCalculatorPage.btn_calc(driver).click();
 
-		// Get the Result Text based on its xpath
-		String result = driver.findElement(By.xpath(".//*[@id='content']/h2[1]")).getText();
+		// Get the Result Text
+		String result = PercentCalculatorPage.web_result(driver).getText();
 
 		result = result.replaceAll("\\D", "");
 
-		// Print a Log In message to the screen
+		// Print a Log In message to the console
 		System.out.println(" The Result is " + result);
 
 		if (result.equals("5")) {

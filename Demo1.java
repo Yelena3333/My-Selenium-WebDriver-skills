@@ -16,7 +16,7 @@ public class Demo1 {
 		// exception
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		// Launch website
+		// Launch web-site
 		driver.navigate().to("http://www.calculator.net/");
 
 		// Maximize the browser
@@ -34,12 +34,12 @@ public class Demo1 {
 		// Click Calculate Button
 		driver.findElement(By.xpath(".//*[@id='content']/table[1]/tbody/tr[2]/td/input[2]")).click();
 
-		// Get the Result Text based on its xpath
+		// Get the Result Text
 		String result = driver.findElement(By.xpath(".//*[@id='content']/h2[1]")).getText();
 
 		result = result.replaceAll("\\D", "");
 
-		// Print a Log In message to the screen
+		// Print a Log In message to the console
 		System.out.println(" The Result is " + result);
 
 		if (result.equals("5")) {
