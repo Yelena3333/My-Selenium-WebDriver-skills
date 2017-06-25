@@ -1,11 +1,10 @@
 package WebDriver;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Demo1 {
+public class Demo2 {
 
 	public static void main(String[] args) {
 
@@ -22,17 +21,16 @@ public class Demo1 {
 		// Maximize the browser
 		driver.manage().window().maximize();
 
-		// Click on Percentage Calculator
-		driver.findElement(By.xpath(".//*[@id='hl3']/li[3]/a")).click();
+		// Use elements from PercentCalculatorPage class
+		PercentCalculatorPage.lnk_percent_calc(driver).click();
 
-		// Enter value 10 in the first number of the percent Calculator
-		driver.findElement(By.xpath(".//*[@id='cpar1']")).sendKeys("10");
+		PercentCalculatorPage.txt_num_1(driver).clear();
+		PercentCalculatorPage.txt_num_1(driver).sendKeys("10");
 
-		// Enter value 50 in the second number of the percent Calculator
-		driver.findElement(By.xpath(".//*[@id='cpar2']")).sendKeys("50");
+		PercentCalculatorPage.txt_num_2(driver).clear();
+		PercentCalculatorPage.txt_num_2(driver).sendKeys("50");
 
-		// Click Calculate Button
-		driver.findElement(By.xpath(".//*[@id='content']/table[1]/tbody/tr[2]/td/input[2]")).click();
+		PercentCalculatorPage.btn_calc(driver).click();
 
 		// Get the Result Text based on its xpath
 		String result = driver.findElement(By.xpath(".//*[@id='content']/h2[1]")).getText();
